@@ -1,0 +1,123 @@
+body{
+    font-family:Bao Fonts  ;
+}
+@font-face {
+    font-family: Bao Fonts;
+    src: url(../assets/font/GoogleSans-Regular.otf);
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 60px calc(100vh - 60px);/* phai co dau cach /*
+    /* vh lay 100% cua parent */ /* width k co 100vh   */
+    grid-template-columns: 250px calc(100% - 250px);
+}  
+ 
+ .header{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.content{
+    background-color: #000;
+}
+.menu{
+    
+}   
+/* Chia theo Flex-box */
+/* .container{
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper{
+    display: flex;
+}
+.header{
+    height:60px;
+    background-color: aqua;
+}
+.menu{
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    height: calc(100vh-60px);
+}
+.content{
+    width: calc(100% - 200px);
+    background-color: rgb(187, 47, 185);
+} */
+/*truyen thong */
+/* .container{
+    width:100%;
+    height: 100vh;
+    background-color: bisque;
+}
+
+.header{
+    width:100%;
+    height:60px;
+    background-color: aqua;
+}
+
+.menu{
+    width: 200px;
+    height: calc(100% - 60px);
+    background-color: red;
+}
+
+.content{
+    position:absolute;
+    top: 60px;
+    left: 200px;
+    background-color: blue;
+    right: 0;
+    bottom: 0; /*keo dai ra het phan con lai cua man hinh */
+/* } */ 
+/* @media only screen and (max-width: 600px){
+    .menu{
+        display:none; 
+    }
+    .content{
+        left:0;
+    }
+    dung cho cach truyen thong;
+*/
+.menu_item{
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.menu_item:hover{
+    background-color: #e5e5e5;
+}
+
+.menu_item__selected{
+    background-color: green;
+}
+
+.menu_item__icon{
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: beige;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.icon_home{
+    background-image: url(../../assets/icon/dashboard.png);
+}
+
+.icon_employee{
+    background-image: url(../../assets/icon/dic-employee.png);
+}
+
+.icon_settings{
+    background-image: url(../../assets/icon/setting.png );
+}
+

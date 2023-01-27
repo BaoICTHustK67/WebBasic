@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout/myfirstpage.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-5.15.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+               <!--  <select class=""></div>  --> 
+                <select name="" id="" class="header_icon4">
+                    <option value="">Nhà hàng hải sản Biển Đông</option>
+                </select>  
+                <div class="header_icon6"></div>
+                <div class="header_icon7"></div>
+                <div class="header_icon8">Hoang Ba Bao</div>
+                <div class="header_icon9"></div>
+            
+        </div>
+        <div class="menu">
+            <div class="menu_item">
+                <div class="menu_item_icon1"></div>
+                <div class="menu_item_icon2"></div>
+            </div>
+            <div class="menu_item1 menu_item1_selection">
+                <div class="menu_item1_icon"></div>
+                <div class="menu_item1_text">Tổng quan</div>
+            </div>
+            <div class="menu_item2">
+                <div class="menu_item2_icon"></div>
+                <div class="menu_item2_text">Báo cáo</div>
+            </div>
+            
+            <div class="menu_item3">
+                <div class="menu_item3_icon"></div>
+                <div class="menu_item3_text">Mua hàng</div>
+            </div>
+            <div class="menu_item4">
+                <div class="menu_item4_icon"></div>
+                <div class="menu_item4_text">Danh sách nhân viên</div>
+            </div>
+            <div class="menu_item5">
+                <div class="menu_item5_icon"></div>
+                <div class="menu_item5_text">Danh sách nhân viên</div>
+            </div>
+            <div class="menu_item6">
+                <div class="menu_item6_icon"></div>
+                <div class="menu_item6_text">Thiết lập hệ thống</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <div class="content1_item1">Danh sách nhân viên</div>
+                <button id="add" class="content1_item2 content1_item2_icon">Thêm nhân viên
+                </button>
+            </div>
+            <div class="content2">
+                <input class="content2_item1" placeholder="Tìm kiếm theo mã tên, hoặc số điện thoại">
+                <select name="combobox1" id="combobox1" class="content2_item2" >
+                    <option value="">   Tất cả phòng ban</option>
+                </select>
+                <select name="" id="" class="content2_item3">
+                    <option value="">Tất cả vị trí</option>
+                </select>
+                <div class="content2_item4"></div>
+            </div>
+                <div class="table-container">
+                    <table id="tbEmployeeList" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th  propValue="EmployeeCode" width: 100px;>Mã nhân viên</th>
+                                <th  propValue="FullName">Họ và tên</th>
+                                <th  propValue="GenderName">Giới tính</th>
+                                <th class="text-align--center"  propValue="DateOfBirth">Ngày sinh</th>
+                                <th  propValue="PhoneNumber">Điện thoại</th>
+                                <th  propValue="Email">Email</th>
+                                <th  propValue="IdentityNumber">Số chứng minh thư</th>
+                                <th  propValue="IdentityDate">Ngày cấp</th>
+                                <th  propValue="IdentityPlace">Nơi cấp</th>
+                                <th  propValue="PositionName">Chức vụ</th>
+                                <th  propValue="DepartmentName">Phòng ban</th>
+                                <th class="text-align-right" propValue="Salary">Mức lương cơ bản</th>
+                                <th  propValue="WorkStatus">Tình trạng công việc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    
+                    </table>
+                </div>
+              
+           
+            <div class="content3">
+                <div class="content3-item1">Hiển thị 1-10/10000 nhân viên</div>
+                <div class="content3-item2">
+                    <div class="content3-item2-icon1"></div>
+                    <div class="content3-item2-icon2"></div>
+                    <div class="content3-item2-icon3 content3-item2-icon3-selected">1</div>
+                    <div class="content3-item2-icon4">2</div>
+                    <div class="content3-item2-icon5">3</div>
+                    <div class="content3-item2-icon6">4</div>
+                    <div class="content3-item2-icon7"></div>
+                    <div class="content3-item2-icon8"></div>
+                </div>
+                <select class="content3-item3">
+                    <option value="">10 nhân viên/trang</option>
+                </select>
+            </div>
+            </div>
+            <div id="dialog" class="dialog">
+                <div class="dialog-wrapper">
+                    <div class="dialog-header">
+                        <div class="dialog-header-text">THÔNG TIN NHÂN VIÊN</div>
+                        <button id="dialog-close" class="dialog-header-icon"></button>
+                    </div>
+                    <div class="dialog-content">
+                        <div class="dialog-content1">
+                            <div class="dialog-content1-icon"></div>
+                            <div class="dialog-content1-text">(Vui lòng chọn ảnh có định dạng .jpg .jpeg .png .gif )</div>
+                        </div>
+                        <div class="dialog-content2" id="dialog-content2">
+                            <div class="dialog-content2-header">
+                                A.THÔNG TIN CHUNG: 
+                                <div class="dialog-content2-line"></div>
+                            </div>
+                            <div class="dialog-content2-content">
+                                <div class="dialog-content2-content-box1">
+                                    <label for="">Mã nhân viên(*)</label>
+                                    <input id="txtEmployeeCode" inputbox propValue="EmployeeCode" type="text" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content2-content-box2">
+                                    <label for="">Họ và tên(*)</label>
+                                    <input inputbox propValue="FullName" type="text" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content2-content-box3">
+                                    <label for="">Ngày sinh</label>
+                                    <input inputbox type="text" propValue="DateOfBirth" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content2-content-box4">
+                                    <label for="">Giới tính</label>
+                                    <select id="genderBox" type="text" propValue="Gender" class="dialog-content3-content-box4-2">
+                                        <option value="0">Nam</option>
+                                        <option value="1">Nữ</option>
+                                        <option value="2">Khác</option>
+
+                                    </select>
+                                </div>
+                                <div class="dialog-content2-content-box5">
+                                    <label for="">Số CMTND/ Căn cước</label>
+                                    <input inputbox type="text" propValue="IdentityNumber" class="dialog-content3-content-box1-2 ">
+                                    <div class="icon2"></div>
+                                    
+                                </div>
+                                <div class="dialog-content2-content-box6">
+                                    <label for="">Ngày cấp</label>
+                                    <input inputbox type="text" propValue="IdentityDate" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content2-content-box7">
+                                    <label for="">Nơi cấp</label>
+                                    <input inputbox type="text" propValue="IdentityPlace" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content2-content-box8">
+                                    <label for="">Email(*)</label>
+                                    <input inputbox type="email" propValue="Email" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content2-content-box9">
+                                    <label for="">Số điện thoại(*)</label>
+                                    <input number inputbox type="text" propValue="PhoneNumber" class="dialog-content3-content-box1-2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dialog-content3">
+                            <div class="dialog-content3-header">
+                                B.THÔNG TIN CÔNG VIỆC: 
+                                <div class="dialog-content3-line"></div>
+                            </div>
+                            <div class="dialog-content3-content">
+                                <div class="dialog-content3-content-box1">
+                                    <label for="">Chức vụ</label>
+                                    <input inputbox id="txtPositionname" type="text" required name-property="Chức vụ" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content3-content-box2">
+                                    <div class="dialog-content3-content-box2-1"></div>
+                                    <label for="">Phòng ban</label>
+                                    <input inputbox type="text" required name-property = "Phòng ban" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content3-content-box3">
+                                    <div class="dialog-content3-content-box3-1">Mã số thuế cá nhân</div>
+                                    <input inputbox type="text" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content3-content-box4">
+                                    <div class="dialog-content3-content-box4-1">Mức lương cơ bản</div>
+                                    <input inputbox type="text" class="dialog-content3-content-box1-2">
+                                </div>
+                                <div class="dialog-content3-content-box5">
+                                    <div class="dialog-content3-content-box5-1">Ngày gia nhập công ty</div>
+                                    <input inputbox type="text" class="dialog-content3-content-box1-2 ">
+                                    <div class="icon3"></div>
+                                    
+                                </div>
+                                <div class="dialog-content3-content-box6">
+                                    <div class="dialog-content3-content-box6-1">Tình trạng công việc</div>
+                                    <input inputbox type="text" class="dialog-content3-content-box1-2">
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dialog-footer">
+                    <button id="save-button" class="dialog-footer-button1 dialog-footer-button1-icon ">
+                      Lưu
+                    </button>
+                    <button class="dialog-footer-button2">Hủy</button>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+   <!--  nhúng thư viện  -->
+    <script src="/js/jquery-3.6.3.min.js"></script>
+<!-- nhúng các js dùng chung -->
+<!-- nhúng các js sử dụng riêng cho trang -->
+    <script src="/js/pages/employee.js"></script>
+</body>
+</html>
